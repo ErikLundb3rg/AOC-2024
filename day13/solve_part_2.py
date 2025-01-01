@@ -36,7 +36,7 @@ def getAB(A, B):
     return A, B
 
 
-# I DID NOT WRITE THIS, courtesy of reddit: xelf
+# needed help from reddit with the below
 def solve(ax, ay, bx, by, px, py):
     M = np.array([[ax, bx], [ay, by]])
     P = np.array([px, py]) + 10000000000000

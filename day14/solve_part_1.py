@@ -55,19 +55,10 @@ def main():
             else:
                 quadrants[3] += 1
     print(quadrants)
-    matrix = [[0 for _ in range(WIDTH)] for _ in range(HEIGHT)]
     p = 1
     for z in quadrants:
         p *= z
     print(p)
-
-    # for x, y in res:
-    #     matrix[y][x] += 1
-
-    # for row in matrix:
-    #     xs = [str(x) for x in row]
-    #     f = [x if x != '0' else '.' for x in xs]
-    #     print("".join(f))
 
 
 if __name__ == '__main__':

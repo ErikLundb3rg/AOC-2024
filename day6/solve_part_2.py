@@ -35,7 +35,6 @@ def main():
             if lines[r][c] == '^':
                 pos = (r, c)
                 break
-    # up right down left
 
     res = 0
 

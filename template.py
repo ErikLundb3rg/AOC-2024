@@ -9,8 +9,7 @@ def getLines(fileName):
         return f.read().splitlines()
 
 
-def neighbors(r, c):
-    return [(r+1, c), (r-1, c), (r, c+1), (r, c-1)]
+DIRECTIONS = [(-1, 0), (0, 1), (1, 0), (0, -1)]
 
 
 def pr(s):

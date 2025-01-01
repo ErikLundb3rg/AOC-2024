@@ -111,7 +111,6 @@ def main():
         elif grid[nR][nC] in '[]' and possible(nR, nC, dR, dC, set()):
 
             boxCoords = set()
-            combined = combinedBox(nR, nC, dR, dC, boxCoords)
             newCoords = []
             for oR, oC in set(boxCoords):
                 rr, cc = oR+dR, oC+dC
@@ -123,7 +122,6 @@ def main():
 
             r, c = nR, nC
         grid[r][c] = '@'
-        # printGrid()
 
     res = 0
     for r in range(M):

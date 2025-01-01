@@ -15,7 +15,6 @@ select(82,585)mul(693,510)%$what()from()mul(740,749){~'<]mul(281,263)when()(!?>/
 
 
 def main():
-    lines = getLines('input.in')
     res = 0
     import regex as re
     pattern = r"(mul\(\d+,\d+\)|do\(\)|don't\(\))"

@@ -26,8 +26,6 @@ def main():
     res = 0
     for mul in muls:
         a, b = map(int, mul[4:-1].split(','))
-        # if res == 0:
-        #     print(a, b)
         res += a*b
 
     print(res)

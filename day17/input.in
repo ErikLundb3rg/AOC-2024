@@ -1,0 +1,19 @@
+Register A: 32916674
+Register B: 0
+Register C: 0
+
+Program: 2,4,1,1,7,5,0,3,1,4,4,0,5,5,3,0
+# 2 4 => B = B % () = lowest 3 bits of B
+# 1 1 => B = B ^ 0b000001
+# 7 5 => C = A // (2**B)
+# 0 3 => A = A // (2**3)
+# 1 4 => B = B ^ 4 
+# 4 0 => B = B ^ C
+# 5 5 => output: B % 8
+# 3 0 => jump to 0
+# reverse engineer such that 
+# last 3 digits of B is Y (the target)
+# 
+# then ^ 4
+# multiply A register by 8
+# muresltiply C register by A * 

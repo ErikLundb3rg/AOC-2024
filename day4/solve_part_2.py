@@ -25,7 +25,6 @@ def main():
                 continue
             cross1 = "".join([lines[r][c] for r, c in cross1])
             cross2 = "".join([lines[r][c] for r, c in cross2])
-            # print(cross1, cross2, bR)
             if cross1[::-1] != "MAS" and cross1 != "MAS":
                 continue
             if cross2[::-1] != "MAS" and cross2 != "MAS":
